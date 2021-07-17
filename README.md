@@ -2,6 +2,8 @@
 
 This is an online code editor for HTML, CSS and JavaScript built using React.
 
+Deployed using Github Pages - [Go to webpage](https://spsomesh2001.github.io/code-editor/)
+
 ![](app-screenshot.jpg)
 
 ## Packages used:
