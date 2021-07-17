@@ -15,6 +15,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import InputBase from "@material-ui/core/InputBase";
 
+// Added custom styles to material-ui menu component
 const CustomSelectInput = withStyles({
   root: {
     color: "white",
@@ -37,13 +38,18 @@ const CodeEd = ({
   setJsFile,
   lang,
 }) => {
+
+  // This array will be used to display file name selected
   const file_name = ["index.html", "index.css", "index.js"];
 
+  // React DOM element reference to textarea and code HTML elements
   const inpCon = useRef(null);
   const highlightCon = useRef(null);
 
+  // State to handle file menu on less-wider screen
   const [resp, setResp] = useState(false);
 
+  // Function to handle state to show file select menu on less-wider screens
   const handleResize = () => {
     if (window.innerWidth < 700) {
       setResp(true);
@@ -52,20 +58,24 @@ const CodeEd = ({
     }
   };
 
+  // This function will sync the scroll of textarea and code block when overflow occurs
   const handleScroll = () => {
     highlightCon.current.scrollTop = inpCon.current.scrollTop;
     highlightCon.current.scrollLeft = inpCon.current.scrollLeft;
   };
 
+  // Check whether to display the smaller file menu on less wide screen
   useEffect(() => {
     handleResize();
   }, []);
 
+  // Highlight syntax of all 3 code written whenever there is change in its content
   useEffect(() => {
     hljs.highlightElement(highlightCon.current);
     inpCon.current.focus();
   }, [htmlFile, cssFile, jsFile, lang]);
 
+  // Resize event listener to trigger handleResize function
   window.addEventListener("resize", handleResize);
 
   return (

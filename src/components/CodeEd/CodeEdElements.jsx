@@ -29,17 +29,14 @@ export const InpCon = styled.textarea`
   height: 100%;
   resize: none;
   padding: 10px;
-
   position: absolute;
   top: 0;
   left: 0;
-
   color: transparent;
   caret-color: white;
   background: transparent;
   z-index: 2;
   border-radius: 5px;
-
   font-family: monospace;
   font-size: 16px;
   white-space: pre;

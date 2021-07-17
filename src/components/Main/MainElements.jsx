@@ -6,7 +6,7 @@ export const MainCon = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #02238f;
+  background-color: #2f3233;
 
   @media screen and (max-width: 700px) {
     flex-direction: column;

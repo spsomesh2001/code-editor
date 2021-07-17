@@ -7,15 +7,17 @@ import OpRender from "../OpRender/OpRender";
 const l = ["html", "css", "js"];
 
 const Main = () => {
-  // For selecting file
+  // States to track the language currently being edited. The 'fileSelect' state will also be used to
+  // keep the language file selected in menu list(on wider screen).
   const [fileSelect, setFileSelect] = useState(0);
+  const [lang, setLang] = useState(l[fileSelect])
 
-  // File content
+  // File content for the 3 languages- HTML, CSS and JavaScript
   const [htmlFile, setHtmlFile] = useState("");
   const [cssFile, setCssFile] = useState("");
   const [jsFile, setJsFile] = useState("");
-  const [lang, setLang] = useState(l[fileSelect])
 
+  // Update 'lang' state whenever 'fileSelect' is being changed
   useEffect(() => {
     setLang(l[fileSelect]);
   }, [fileSelect]);
