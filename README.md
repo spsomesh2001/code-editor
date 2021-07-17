@@ -1,4 +1,4 @@
-# HTML, CSS, JavaScript Code Editor using react
+# HTML, CSS, JavaScript Code Editor using React
 
 This is an online code editor for HTML, CSS and JavaScript built using React.
 
