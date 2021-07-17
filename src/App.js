@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { GlobalCon } from "./globalStyles";
+import { Header, Main } from "./components/index";
+import "../node_modules/highlight.js/styles/atom-one-dark.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalCon></GlobalCon>
+      <Header></Header>
+      <Main></Main>
+    </>
   );
-}
+};
 
 export default App;
