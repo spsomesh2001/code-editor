@@ -2,17 +2,17 @@
 
 This is an online code editor for HTML, CSS and JavaScript built using React.
 
-Deployed using Github Pages - [Go to webpage](https://spsomesh2001.github.io/code-editor/)
+Deployed using Github Pages - [Go to webpage!](https://spsomesh2001.github.io/code-editor/)
 
 ![](app-screenshot.jpg)
 
 ## Packages used:
 
-1. styled-components - Package used to enhance CSS integration into React components. [Go to documentation](https://styled-components.com/)
-2. highlight.js - Package to highlight syntax of code written in the code space. [Go to documentation](https://highlightjs.org/)
-3. dompurify - Package to sanitize HTML code written into the editor. [Go to documentation](https://www.npmjs.com/package/dompurify)
-4. react-router-dom - Package used to route pages in the web app. [Go to documentation](https://reactrouter.com/web/guides/quick-start)
-5. material-ui - Package to use prebuilt react components. [Go to documentation](https://material-ui.com/)
+1. styled-components - Package used to enhance CSS integration into React components. [Go to documentation.](https://styled-components.com/)
+2. highlight.js - Package to highlight syntax of code written in the code space. [Go to documentation.](https://highlightjs.org/)
+3. dompurify - Package to sanitize HTML code written into the editor. [Go to documentation.](https://www.npmjs.com/package/dompurify)
+4. react-router-dom - Package used to route pages in the web app. [Go to documentation.](https://reactrouter.com/web/guides/quick-start)
+5. material-ui - Package to use prebuilt react components. [Go to documentation.](https://material-ui.com/)
 
 
 # Getting Started with Create React App

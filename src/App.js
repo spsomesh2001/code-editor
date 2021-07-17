@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { GlobalCon } from "./globalStyles";
 import { Header, Main } from "./components/index";
+
+// Theme CSS import for highlight.js package used syntax highlight.
 import "../node_modules/highlight.js/styles/atom-one-dark.css";
 
 const App = () => {

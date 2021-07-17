@@ -8,8 +8,10 @@ import {
   SynHigh,
 } from "./CodeEdElements";
 
+// Package used to highlight syntax in code editor
 import hljs from "highlight.js";
 
+// Components imported from material-ui for file-explorer menu for less wider-screens.
 import { withStyles } from "@material-ui/core/styles";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
